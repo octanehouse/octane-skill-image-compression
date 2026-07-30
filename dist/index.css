@@ -1,0 +1,180 @@
+/* src/styles.css */
+.octane-compression-workbench {
+  display: grid;
+  gap: 1.25rem;
+  color: #0b0c0f;
+  font-family:
+    Geist,
+    Inter,
+    system-ui,
+    sans-serif;
+}
+.octane-compression-workbench header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.octane-compression-workbench header span,
+.octane-compression-result span {
+  font:
+    10px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.octane-compression-workbench header p {
+  max-width: 36rem;
+  margin: .5rem 0 0;
+  color: rgba(11, 12, 15, .62);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.octane-compression-workbench header b {
+  flex: none;
+  border: 1px solid rgba(11, 12, 15, .14);
+  border-radius: 999px;
+  padding: .5rem .7rem;
+  font:
+    9px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.octane-compression-dropzone {
+  display: grid;
+  justify-items: center;
+  gap: .5rem;
+  padding: 2.5rem 1.25rem;
+  border: 1px dashed rgba(11, 12, 15, .18);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.octane-compression-dropzone:hover {
+  border-color: #0b0c0f;
+}
+.octane-compression-dropzone strong {
+  font:
+    10px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.octane-compression-dropzone small,
+.octane-compression-actions small,
+.octane-compression-note {
+  color: rgba(11, 12, 15, .5);
+  font:
+    10px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+}
+.octane-compression-dropzone input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.octane-compression-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.octane-compression-controls label {
+  display: grid;
+  gap: .5rem;
+  font:
+    10px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.octane-compression-controls input,
+.octane-compression-controls select {
+  width: 100%;
+  min-width: 0;
+  padding: .6rem .7rem;
+  border: 1px solid rgba(11, 12, 15, .14);
+  border-radius: 6px;
+  background: #f7f7f7;
+  color: #0b0c0f;
+}
+.octane-compression-controls input[type=range] {
+  padding: .6rem 0;
+  accent-color: #e61919;
+}
+.octane-compression-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+}
+.octane-compression-actions button,
+.octane-compression-result a {
+  border: 0;
+  border-radius: 999px;
+  padding: .7rem 1rem;
+  background: #0b0c0f;
+  color: #fff;
+  font:
+    10px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.octane-compression-actions button:disabled {
+  cursor: not-allowed;
+  opacity: .4;
+}
+.octane-compression-result {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, .8fr);
+  gap: 1rem;
+}
+.octane-compression-result img {
+  width: 100%;
+  height: 100%;
+  min-height: 14rem;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #0b0c0f;
+}
+.octane-compression-result > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: 1rem;
+  border: 1px solid rgba(11, 12, 15, .14);
+  border-radius: 8px;
+}
+.octane-compression-result p {
+  margin: 0;
+  color: rgba(11, 12, 15, .62);
+  font-size: .9rem;
+}
+.octane-compression-result a {
+  width: max-content;
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 700px) {
+  .octane-compression-controls,
+  .octane-compression-result {
+    grid-template-columns: 1fr;
+  }
+}
