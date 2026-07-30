@@ -1,0 +1,17 @@
+{
+  "name": "@octane-house/image-compression",
+  "version": "0.1.0",
+  "description": "Octane's local-only browser image compression workbench.",
+  "type": "module",
+  "license": "MIT",
+  "files": ["src", "README.md", "SKILL.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "peerDependencies": { "react": ">=19", "react-dom": ">=19" },
+  "devDependencies": { "@types/react": "^19", "@types/react-dom": "^19", "typescript": "^5" }
+}
