@@ -9,13 +9,19 @@ Live resource: <https://marcusmfrancis.com/skills/image-compression>
 ## Use it
 
 ```bash
-npx --yes github:octanehouse/octane-skills-cli add-source octanehouse/octane-skill-image-compression --skill octane-image-compression --dest .octane/skills
+npm install github:octanehouse/octane-skill-image-compression
 ```
 
 ```tsx
 import { ImageCompressionWorkbench } from "@octane-house/image-compression";
 
 <ImageCompressionWorkbench />;
+```
+
+For an agent-only install, use the reviewed skill payload:
+
+```bash
+npx --yes github:octanehouse/octane-skills-cli add-source octanehouse/octane-skill-image-compression --skill octane-image-compression --dest .octane/skills
 ```
 
 The reusable `compressImage` helper uses the browser Canvas API and returns a
